@@ -1,13 +1,12 @@
 import styles from '@/styles/About.module.css'
+import SectionTitle from './SectionTitle.jsx'
 export default function About() {
     return (
         <div id="about">
             <div className="container">
-                <h1 className={`${styles['section-title']} frame`}>
-                    <div>
-                        About Me
-                    </div>
-                </h1>
+                <SectionTitle>
+                    About Me
+                </SectionTitle>
                 <div className={`${styles['about-content']}`}>
                     <p>
                         Hi there👋 I&apos;m Abrar — a full stack web developer based in Qatar. I build solutions for

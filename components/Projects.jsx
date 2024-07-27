@@ -1,16 +1,15 @@
 import projects from "@/data/projects.js";
 import Project from "./Project.jsx";
 import styles from "@/styles/Projects.module.css"
+import SectionTitle from "./SectionTitle.jsx";
 
 export default function Projects() {
     return (
         <>
             <div className="container">
-                <h1 className="section-title frame">
-                    <div>
-                        Projects
-                    </div>
-                </h1>
+                <SectionTitle>
+                    Projects
+                </SectionTitle>
             </div>
             <div id="portfolio">
                 <div className={`${styles["project-container"]}`}>

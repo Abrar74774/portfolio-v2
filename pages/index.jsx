@@ -14,9 +14,9 @@ export default function Home() {
   return (
     <>
       <Head>
-      <meta charset="UTF-8" />
+      <meta charSet="UTF-8" />
       <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
-      <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+      <meta httpEquiv="X-UA-Compatible" content="ie=edge" />
       <title>Abrar Shahriar Hossain</title>
       <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
       </Head>
