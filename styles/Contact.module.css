@@ -1,0 +1,43 @@
+.contact {
+    margin-top: 80px;
+    padding: 150px 5vw;
+    color: white;
+    background-color: #333;
+}
+
+.contact h1 {
+    text-align: center;
+}
+
+.contact .email a {
+    text-decoration: none;
+}
+
+.contact .links {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    z-index: 2;
+    background-color: transparent;
+    height: 80px;
+    width: 100%;
+    padding: 0 10px;
+}
+
+.contact .links a {
+    padding: 20px;
+}
+
+.contact .links a i {
+    color: #29dfff;
+    font-size: 45px;
+    transition: color 0.3s;
+}
+
+.contact .links a:hover {
+    cursor: pointer;
+}
+
+.contact .links a:hover i {
+    color: white;
+}

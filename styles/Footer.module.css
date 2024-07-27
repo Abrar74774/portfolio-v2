@@ -1,0 +1,20 @@
+.footer {
+    background-color: #222;
+    min-height: 200px;
+    width: 100%;
+    color: #666;
+}
+
+.footer :global(.container) {
+    height: inherit;
+    width: 70%;
+    margin: 0 auto;
+    padding: 85px 0;
+    overflow: hidden;
+    text-align: center;
+}
+
+.footer :global(.container) a {
+    color: #29dfff;
+    text-decoration: none;
+}

@@ -1,0 +1,71 @@
+.project {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: row-reverse;
+    margin: 10rem 0;
+}
+
+.project:nth-child(odd) {
+    flex-direction: row;
+}
+
+.project:nth-child(odd) .desc-container {
+    text-align: right;
+    margin: 0 0 0 -20%;
+}
+
+.project:nth-child(odd) .image-container {
+    text-align: right;
+}
+
+.project:nth-child(odd) .desc-container .techs {
+    justify-content: flex-end;
+}
+
+.project .image-container {
+    width: 50%;
+}
+
+.project .image-container img {
+    display: block;
+    width: 100%;
+    object-fit: cover;
+}
+
+.project .desc-container {
+    width: 50%;
+    margin: 0 -20% 0 0;
+    font-size: 1rem;
+}
+
+.project .desc-container .desc-title {
+    font-size: 1.5rem;
+    padding: 0.5rem;
+}
+
+.project .desc-container .desc-text {
+    padding: 1rem;
+    background-color: #223d;
+    backdrop-filter: blur(6px);
+}
+
+.project .desc-container .techs {
+    margin-bottom: 0.5rem;
+    font-size: 0.8rem;
+    display: flex;
+    list-style: none;
+    padding: 0;
+}
+
+.project .desc-container .techs li {
+    margin: 0.5rem;
+}
+
+.project .desc-container .desc-links a {
+    padding: 0.1rem 0.5rem;
+    background-color: #29dfff;
+    font-weight: 500;
+    color: black;
+    margin: 0 0.1rem;
+}
