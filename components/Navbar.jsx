@@ -7,8 +7,6 @@ import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
 
 gsap.registerPlugin(useGSAP, ScrollTrigger);
 export default function Navbar() {
-    console.log(`${styles.navbar} ${styles["nav-background"]}`)
-
     useGSAP(() => {
         gsap.from(`.${styles.navbar} .${styles["nav-background"]}`, {
             scrollTrigger: {

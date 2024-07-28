@@ -1,15 +1,10 @@
 import Head from "next/head";
-import Image from "next/image";
-import { Inter } from "next/font/google";
-import styles from "@/styles/Home.module.css";
 import Hero from "@/components/Hero.jsx";
 import About from "@/components/About.jsx";
 import Projects from "@/components/Projects.jsx";
 import Contact from "@/components/Contact.jsx";
 import Footer from "@/components/Footer.jsx";
-
-const inter = Inter({ subsets: ["latin"] });
-
+import TrianglesBackground from "@/components/TrianglesBackground.jsx";
 export default function Home() {
   return (
     <>
@@ -23,10 +18,13 @@ export default function Home() {
       
       <div>
         <Hero />
-        <About /> 
-        <Projects />
-        <Contact />
-        <Footer />
+        <main>
+          <TrianglesBackground />
+          <About /> 
+          <Projects />
+          <Contact />
+          <Footer />
+        </main>
       </div>
     </>
   );

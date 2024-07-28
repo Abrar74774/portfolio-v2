@@ -67,8 +67,14 @@ ul {
 .frame {
   overflow: hidden;
   line-height: 1;
+  padding-bottom: 0.65rem;
 }
 
 .frame div {
   line-height: 1;
+}
+
+main {
+  position: relative;
+  z-index: 1;
 }

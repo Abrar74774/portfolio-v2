@@ -38,7 +38,7 @@ export default function Hero() {
             </div>
             <div className={`${styles["home-content"]}`} onMouseMove={handleMouseMove}>
                 <Navbar />
-                <div className={`${styles["hello-container"]}`} ref={homeContainer}>
+                <div ref={homeContainer}>
                     <h1 className={styles.hello}>
                         <div className="frame">
                             <div>

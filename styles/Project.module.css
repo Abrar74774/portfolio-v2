@@ -10,6 +10,10 @@
     flex-direction: row;
 }
 
+.project:nth-child(1) {
+    margin-top:0;
+}
+
 .project:nth-child(odd) .desc-container {
     text-align: right;
     margin: 0 0 0 -20%;
@@ -25,13 +29,19 @@
 
 .project .image-container {
     width: 50%;
+    height: 100%;
+    position: relative;
+    overflow: hidden;
 }
 
 .project .image-container img {
-    display: block;
-    width: 100%;
-    object-fit: cover;
+    position: relative !important;
 }
+
+.desc-text-container {
+    overflow: hidden;
+}
+
 
 .project .desc-container {
     width: 50%;
@@ -48,6 +58,10 @@
     padding: 1rem;
     background-color: #223d;
     backdrop-filter: blur(6px);
+}
+
+.desc-text p {
+    margin: 0;
 }
 
 .project .desc-container .techs {
