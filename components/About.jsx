@@ -1,13 +1,34 @@
 import styles from '@/styles/About.module.css'
 import SectionTitle from './SectionTitle.jsx'
+import { gsap } from "gsap/dist/gsap";
+import { useGSAP } from "@gsap/react";
+
+import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
+import { useRef } from 'react';
+import fadeInFrom from '@/data/fadeIn.js';
+
+
+gsap.registerPlugin(useGSAP, ScrollTrigger);
+
 export default function About() {
+    const content = useRef(null)
+
+    useGSAP(() => {
+        gsap.from(`.${styles['about-content']} > *`, {
+            ...fadeInFrom,
+            scrollTrigger: {
+                trigger: `*:nth-child(1)`,
+                start: "top bottom-=200px",
+            }
+        })
+    }, { scope: content})
     return (
         <div id="about">
             <div className="container">
                 <SectionTitle>
                     About Me
                 </SectionTitle>
-                <div className={`${styles['about-content']}`}>
+                <div ref={content} className={`${styles['about-content']}`}>
                     <p>
                         Hi there👋 I&apos;m Abrar — a full stack web developer based in Qatar. I build solutions for
                         the web - web apps, websites, plugins, widgets and more. I&apos;m passionate about motorsports, swimming, video

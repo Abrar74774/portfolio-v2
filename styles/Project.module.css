@@ -3,7 +3,15 @@
     align-items: center;
     justify-content: space-around;
     flex-direction: row-reverse;
-    margin: 10rem 0;
+    padding: 5rem 0;
+}
+
+/* .project:first-child {
+    padding-top: 0;
+} */
+
+.project:last-child {
+    padding-bottom: 0;
 }
 
 .project:nth-child(odd) {

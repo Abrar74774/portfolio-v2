@@ -10,6 +10,7 @@ gsap.registerPlugin(useGSAP, ScrollTrigger);
 function getRandomInt(min, max) {
     return Math.floor(Math.random() * (max - min + 1) + min);
 }
+const plusOrMinus = () => Math.random() < 0.5 ? -1 : 1;
 
 const numOfTriangles = 10
 const triangleArray = [...Array(numOfTriangles).keys()].map(index => {
@@ -26,12 +27,13 @@ export default function TrianglesBackground() {
                 scrollTrigger: {
                     scrub: 0
                 },
-                y: (i, target) => ScrollTrigger.maxScroll(window) * getRandomInt(1, 4) * 0.1,
+                y: (i, target) => ScrollTrigger.maxScroll(window) * getRandomInt(2, 10) * 0.05,
                 ease: "none"
             });
             gsap.to(triangle, {
-                rotate: 360,
+                rotate: plusOrMinus() * 360,
                 repeat: -1,
+                direction: -1,
                 duration: getRandomInt(20, 30),
                 ease: 'none'
             })

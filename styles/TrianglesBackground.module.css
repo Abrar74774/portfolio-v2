@@ -22,7 +22,7 @@
 
 .triangle svg path {
     transition: fill 0.5s;
-    stroke-width: 0.05px;
+    stroke-width: 0.06px;
     fill: #0000
 }
 .triangle svg path:hover {

@@ -1,7 +1,9 @@
 .contact {
-    margin-top: 80px;
-    padding: 150px 5vw;
     color: white;
+    height: 120vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .contact h1 {
