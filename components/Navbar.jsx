@@ -1,20 +1,32 @@
 import styles from '@/styles/Navbar.module.css'
 import { gsap } from "gsap/dist/gsap";
 import { useGSAP } from "@gsap/react";
-    
+
 import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
 
 
 gsap.registerPlugin(useGSAP, ScrollTrigger);
 export default function Navbar() {
     useGSAP(() => {
+        gsap.set(`.${styles["nav-content"]}`, {
+            opacity: 1
+        })
+        gsap.from(`.${styles["nav-content"]} a`, {
+            opacity: 0,
+            y: 5,
+            stagger: 0.2,
+            ease: "power4.out",
+            duration: 1,
+            delay: 1.5
+        })
+
         gsap.from(`.${styles.navbar} .${styles["nav-background"]}`, {
             scrollTrigger: {
                 trigger: `#about`,
                 toggleActions: "play none none reverse",
                 start: "top bottom",
                 end: "+=100",
-                
+
             },
             x: '-100vw',
             ease: "power2.in",

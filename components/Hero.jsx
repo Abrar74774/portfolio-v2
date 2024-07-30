@@ -19,13 +19,14 @@ export default function Hero() {
     }
 
     useGSAP(() => {
-        gsap.from(`.${styles.hello} .frame div`, {
-            yPercent: 100,
-            ease: "power2.out",
+        gsap.to(`.${styles.hello} .frame div`, {
+            yPercent: -110,
+            ease: "power4.out",
             stagger: 0.5,
-            duration: 1.5,
+            duration: 2,
             delay: 0.3
         })
+        
     }, { scope: homeContainer})
 
     return (
