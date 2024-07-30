@@ -2,6 +2,11 @@
   box-sizing: border-box;
 }
 
+:root {
+  --filter: blur(6px);
+  --filtered-background-color: #223d;
+}
+
 ::selection {
   background-color: #29dfff;
   color: black;
@@ -71,4 +76,19 @@ ul {
 main {
   position: relative;
   z-index: 1;
+}
+
+
+@media screen and (min-width: 600px) {
+  .mobile {
+    display: none !important;
+  }
+}
+
+
+@media screen and (max-width:600px) {
+  .not-mobile {
+    display: none !important;
+  }
+
 }
