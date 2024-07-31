@@ -48,9 +48,11 @@
 .hamburger-container svg {
     width: 30px;
     height: 30px;
-    stroke: white;
+    stroke: #0008;
+    stroke-width: 100px;
     fill: white;
 }
+
 
 @media screen and (max-width: 600px) {
     .nav-content {

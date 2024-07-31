@@ -16,7 +16,6 @@ export default function Navbar() {
             opacity: 1
         })
 
-        if (open) {
             gsap.from(`.${styles["nav-content"]} a`, {
                 opacity: 0,
                 y: 5,
@@ -25,8 +24,7 @@ export default function Navbar() {
                 duration: 1,
                 delay: 1.5
             })
-        }
-        
+
         gsap.from(`.${styles.navbar} .${styles["nav-background"]}`, {
             scrollTrigger: {
                 trigger: `#about`,
