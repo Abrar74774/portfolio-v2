@@ -10,7 +10,7 @@ const mouseMoveDivisor = 60
 
 export default function Hero() {
     const [ coords, setCoords ] = useState({x: 0, y:0})
-    const homeContainer = useRef(null)
+    const helloContainer = useRef(null)
     const handleMouseMove = e => {
         setCoords({
             x: -e.clientX / mouseMoveDivisor,
@@ -19,15 +19,16 @@ export default function Hero() {
     }
 
     useGSAP(() => {
-        gsap.to(`.${styles.hello} .frame div`, {
-            yPercent: -110,
+        gsap.set(`.${styles.hello}`, {visibility: 'visible'})
+        gsap.from(`.${styles.hello} .frame div`, {
+            yPercent: 110,
             ease: "power4.out",
             stagger: 0.5,
             duration: 2,
             delay: 0.3
         })
         
-    }, { scope: homeContainer})
+    }, { scope: helloContainer})
 
     return (
         <div className={styles.home}>
@@ -39,11 +40,11 @@ export default function Hero() {
             </div>
             <div className={`${styles["home-content"]}`} onMouseMove={handleMouseMove}>
                 <Navbar />
-                <div ref={homeContainer}>
+                <div ref={helloContainer} className={`${styles['hello-container']}`}>
                     <h1 className={styles.hello}>
                         <div className="frame">
                             <div>
-                                Hello. I&apos;m <span className={styles.glow}>Abrar Shahriyar Hossain</span><br />
+                                Hello. I&apos;m <span className={styles.glow}>Abrar&nbsp;Shahriyar</span><br />
                             </div>
                         </div>
                         <div className="frame">
