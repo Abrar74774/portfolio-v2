@@ -87,6 +87,10 @@ main {
 
 
 @media screen and (max-width:600px) {
+  h1.section-title {
+    font-size: 3rem;
+  }
+
   .not-mobile {
     display: none !important;
   }

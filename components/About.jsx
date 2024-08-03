@@ -23,7 +23,7 @@ export default function About() {
         })
     }, { scope: content})
     return (
-        <div id="about">
+        <section id="about">
             <div className="container">
                 <SectionTitle>
                     About Me
@@ -78,6 +78,6 @@ export default function About() {
                     </ul>
                 </div>
             </div>
-        </div>
+        </section>
     )
 }

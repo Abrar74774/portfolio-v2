@@ -5,7 +5,7 @@ import SectionTitle from "./SectionTitle.jsx";
 
 export default function Projects() {
     return (
-        <>
+        <section>
             <div className="container">
                 <SectionTitle>
                     Projects
@@ -13,7 +13,8 @@ export default function Projects() {
             </div>
             <div id="portfolio">
                 <div className={`${styles["project-container"]}`}>
-                    {projects.map(({ title, techs, site, source, img, description }) => <Project 
+                    {projects.map(({ title, techs, site, source, img, description }) => 
+                    <Project 
                         key={title}
                         title={title}
                         techs={techs}
@@ -24,6 +25,6 @@ export default function Projects() {
                     />)}
                 </div>
             </div>
-        </>
+        </section>
     )
 }

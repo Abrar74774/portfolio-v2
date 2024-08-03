@@ -18,8 +18,9 @@
     flex-direction: row;
 }
 
-.project:nth-child(1) {
+.project:first-child {
     margin-top:0;
+    padding-top: 0;
 }
 
 .project:nth-child(odd) .desc-container {

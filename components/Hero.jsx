@@ -31,7 +31,7 @@ export default function Hero() {
     }, { scope: helloContainer})
 
     return (
-        <div className={styles.home}>
+        <header className={styles.home}>
             <div className={styles.homepic} style={{ transform: `translateX(${coords.x}px) translateY(${coords.y}px)`}}>
                 <video autoPlay muted loop>
                     <source src="vid/blue.webm" type="video/webm" />
@@ -55,6 +55,6 @@ export default function Hero() {
                     </h1>
                 </div>
             </div>
-        </div>
+        </header>
     )
 }

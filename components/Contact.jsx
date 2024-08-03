@@ -23,7 +23,7 @@ export default function Contact() {
         })
     }, { scope: contact})
     return (
-        <div id='contact' ref={contact} className={styles.contact}>
+        <section id='contact' ref={contact} className={styles.contact}>
             <div>
                 <SectionTitle>
                     Get In Touch
@@ -43,6 +43,6 @@ export default function Contact() {
                     </a>
                 </div>
             </div>
-        </div>  
+        </section>  
     )
 }

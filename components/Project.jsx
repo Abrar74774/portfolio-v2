@@ -48,7 +48,7 @@ export default function Project({ title, techs, site, source, img, description }
 		}, '<')
 	}, { scope: project })
 	return (
-		<div ref={project} className={styles.project}>
+		<article ref={project} className={styles.project}>
 			<div className={`${styles["image-container"]}`}>
 				<Image priority fill src={img} alt={title} style={{ objectFit: 'cover' }} />
 			</div>
@@ -71,6 +71,6 @@ export default function Project({ title, techs, site, source, img, description }
 					}
 				</div>
 			</div>
-		</div>
+		</article>
 	)
 }
