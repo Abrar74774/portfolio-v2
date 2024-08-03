@@ -35,7 +35,7 @@ export default function About() {
                         games and of course, coding.
                     </p>
                     <p>
-                        I&apos;ve worked with a wide range of clients from business owners to dev teams in areas like logistics,
+                        I&apos;ve worked with a wide range of clients from business owners to dev teams in sectors like logistics,
                         research, electronics and others. I&apos;ve worked mostly with the Javascript ecosystem of libraries and
                         frameworks for both frontend and backend, along with some python and wordpress.
                     </p>

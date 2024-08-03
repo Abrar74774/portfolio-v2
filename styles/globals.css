@@ -34,7 +34,7 @@ html {
 }
 
 .container {
-  width: 850px;
+  max-width: 850px;
   margin: 0 auto;
   padding: 1rem;
 }
@@ -91,4 +91,8 @@ main {
     display: none !important;
   }
 
+  body {
+    font-size: 0.9rem;
+    line-height: 1.5;
+  }
 }
