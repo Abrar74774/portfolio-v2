@@ -17,12 +17,12 @@ export default function Project({ title, techs, site, source, img, description }
 			scrollTrigger: {
 				trigger: `.${styles["desc-container"]}`,
 				// toggleActions: "play none none reverse",
-				start: "top bottom-=100px",
+				start: "top bottom-=150px",
 			},
 		})
 
 
-		tl.from(`.${styles["image-container"]} img`, {
+		tl.add("start").from(`.${styles["image-container"]} img`, {
 			yPercent: 105,
 			// opacity: 0,
 			ease: 'power2.out',
@@ -32,25 +32,29 @@ export default function Project({ title, techs, site, source, img, description }
 			xPercent: -100,
 			duration: 0.7,
 			ease: 'power2.out',
-		}, '<')
+			delay: 0.3
+		}, 'start')
 		tl.from(`.${styles.project}:nth-child(odd) .${styles["desc-text"]}`, {
 			xPercent: 100,
 			duration: 0.7,
 			ease: 'power2.out',
-		}, '<')
+			delay: 0.3
+		}, 'start')
 
 		tl.from(`.${styles["desc-container"]} > *:not(.${styles["desc-text-container"]}), .${styles["desc-text"]} p`, {
 			opacity: 0,
 			y: 5,
 			duration: 0.5,
 			stagger: 0.1,
-			delay: 0.6
+			delay: 0.3
 		}, '<')
 	}, { scope: project })
 	return (
 		<article ref={project} className={styles.project}>
 			<div className={`${styles["image-container"]}`}>
-				<Image priority fill src={img} alt={title} style={{ objectFit: 'cover' }} />
+				<a href={site}>
+					<Image priority fill src={img} alt={title} style={{ objectFit: 'cover' }} />
+				</a>
 			</div>
 			<div className={`${styles["desc-container"]}`}>
 				<div className={`${styles["desc-title"]}`}>

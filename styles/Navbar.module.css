@@ -8,6 +8,7 @@
 }
 
 .nav-background {
+    visibility: hidden;
     position: absolute;
     background-color: #111;
     width: 100%;
@@ -21,9 +22,10 @@
     position: relative;
     justify-content: flex-end;
     align-items: center;
-    width: 100%;
+    max-width: 1200px;
+    padding: 0 1rem;
+    margin: 0 auto;
     height: 100%;
-    padding: 0 5rem;
     z-index: 3;
 }
 

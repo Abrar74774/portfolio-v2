@@ -6,6 +6,8 @@ import { useGSAP } from "@gsap/react";
 import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
 import { useRef } from 'react';
 import fadeInFrom from '@/data/fadeIn.js';
+import Image from 'next/image.js';
+import companies from '@/data/companies.js';
 
 
 gsap.registerPlugin(useGSAP, ScrollTrigger);
@@ -31,17 +33,16 @@ export default function About() {
                 <div ref={content} className={`${styles['about-content']}`}>
                     <p>
                         Hi there👋 I&apos;m Abrar — a full stack web developer based in Qatar. I build solutions for
-                        the web - web apps, websites, plugins, widgets and more. I&apos;m passionate about motorsports, swimming, video
-                        games and of course, coding.
+                        the web - web apps, websites, plugins, widgets and more. I&apos;m passionate about motorsports, video
+                        games, and of course, coding.
                     </p>
                     <p>
                         I&apos;ve worked with a wide range of clients from business owners to dev teams in sectors like logistics,
-                        research, electronics and others. I&apos;ve worked mostly with the Javascript ecosystem of libraries and
-                        frameworks for both frontend and backend, along with some python and wordpress.
+                        research, electronics and others. I work mostly with Javascript along with some Python.
                     </p>
                     <p>
                         Whether you are a business owner looking to boost your online presence, an entrepreneur with an innovative
-                        idea in mind for an app, a developer looking to collab, or just wanting to say hi, let&apos;s <a
+                        app idea, a developer looking to collab on something cool, or just wanting to say hi, let&apos;s <a
                             href="#contact">get in touch</a> and work together.
                     </p>
                     <p>
@@ -63,16 +64,20 @@ export default function About() {
                     </ul>
                     <p>Some companies I&apos;ve worked with:</p>
                     <ul className={styles.companies}>
-                        <li>
-                            <a href="https://www.solverminds.com/">Solverminds</a>
-                        </li>
-                        <li>
-                            <a href="https://www.974perfumes.com">974Perfumes</a>
-                        </li>
+                        {companies.map(company =>
+                            <li key={company.name}>
+                                <a href={company.src}>
+                                    <div className={`${styles["company-logo-container"]}`}>
+                                        <Image src={company.image} fill style={{objectFit: 'contain'}} alt={`${company.name} logo`} />
+                                    </div>
+                                </a>
+                            </li>
+                        )}
                         <li>
                             <a href="#contact">
-                                +
-                                Add Yours
+                                <div>
+                                + Add Yours
+                                </div>
                             </a>
                         </li>
                     </ul>

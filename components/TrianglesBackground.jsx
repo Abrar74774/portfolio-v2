@@ -43,7 +43,6 @@ export default function TrianglesBackground() {
     return (
         <div className={`${styles["triangles-container"]}`}>
             {triangleArray.map(triangle => {
-                console.log("size", triangle.size)
                 return (
                     <div className={styles.triangle} key={triangle.key} style={{
                         top: triangle.y,

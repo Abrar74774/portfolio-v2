@@ -18,7 +18,7 @@ export default function Contact() {
             ...fadeInFrom,
             scrollTrigger: {
                 trigger: `*:nth-child(2)`,
-                start: "top bottom-=200px",
+                start: "top bottom-=100px",
             }
         })
     }, { scope: contact})
