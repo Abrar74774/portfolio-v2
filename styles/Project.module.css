@@ -35,14 +35,14 @@
     justify-content: flex-end;
 }
 
-.project .image-container {
+.image-container {
     width: 50%;
     height: 100%;
     position: relative;
     overflow: hidden;
 }
 
-.project .image-container img {
+.image-container img {
     position: relative !important;
 }
 
@@ -51,18 +51,18 @@
 }
 
 
-.project .desc-container {
+.desc-container {
     width: 50%;
     margin: 0 -20% 0 0;
     font-size: 1rem;
 }
 
-.project .desc-container .desc-title {
+.desc-container .desc-title {
     font-size: 1.5rem;
     padding: 0.5rem;
 }
 
-.project .desc-container .desc-text {
+.desc-text {
     padding: 1rem;
     background-color: #223d;
     backdrop-filter: blur(6px);
@@ -72,7 +72,7 @@
     margin: 0;
 }
 
-.project .desc-container .techs {
+.techs {
     margin-bottom: 0.5rem;
     font-size: 0.8rem;
     display: flex;
@@ -90,4 +90,29 @@
     font-weight: 500;
     color: black;
     margin: 0 0.1rem;
+}
+
+@media screen and (max-width: 600px) {
+    .project {
+        display: block;
+    }
+    .desc-container {
+        /* position: absolute; */
+        font-size: 0.9rem;
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .project:nth-child(odd) .desc-container {
+        margin: 0 auto;
+        text-align: left;
+    }
+
+    .project:nth-child(odd) .desc-container .techs {
+        justify-content: flex-start;
+    }
+
+    .image-container {
+        width: 100%;
+    }
 }

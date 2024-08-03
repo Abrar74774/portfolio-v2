@@ -15,9 +15,9 @@ export default function Project({ title, techs, site, source, img, description }
 	useGSAP(() => {
 		const tl = gsap.timeline({
 			scrollTrigger: {
-				trigger: `.${styles["image-container"]}`,
+				trigger: `.${styles["desc-container"]}`,
 				// toggleActions: "play none none reverse",
-				start: "top bottom-=200px",
+				start: "top bottom-=100px",
 			},
 		})
 
@@ -26,16 +26,16 @@ export default function Project({ title, techs, site, source, img, description }
 			yPercent: 105,
 			// opacity: 0,
 			ease: 'power2.out',
-			duration: 0.3
+			duration: 1
 		})
 		tl.from(`.${styles.project}:nth-child(even) .${styles["desc-text"]}`, {
 			xPercent: -100,
-			duration: 0.5,
+			duration: 0.7,
 			ease: 'power2.out',
 		}, '<')
 		tl.from(`.${styles.project}:nth-child(odd) .${styles["desc-text"]}`, {
 			xPercent: 100,
-			duration: 0.5,
+			duration: 0.7,
 			ease: 'power2.out',
 		}, '<')
 
@@ -44,7 +44,7 @@ export default function Project({ title, techs, site, source, img, description }
 			y: 5,
 			duration: 0.5,
 			stagger: 0.1,
-			delay: 0.3
+			delay: 0.6
 		}, '<')
 	}, { scope: project })
 	return (
