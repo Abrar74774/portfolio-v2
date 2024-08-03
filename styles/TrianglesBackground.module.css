@@ -21,10 +21,19 @@
 }
 
 .triangle svg path {
-    transition: fill 0.5s;
     stroke-width: 0.06px;
     fill: #0000
 }
-.triangle svg path:hover {
-    fill: #29dfff11;
-} 
+
+
+@media screen and (max-width: 600px) {
+    .triangle svg {
+        height: 300px;
+        width: 300px;
+    }
+
+    .triangle svg path {
+        stroke-width: 0.06px;
+        fill: #0000
+    }
+}
