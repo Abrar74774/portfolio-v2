@@ -64,8 +64,12 @@
 }
 
 @media screen and (max-width: 600px) {
+    .hello-container {
+        justify-content: flex-start;
+    }
     .hello {
         text-align: left;
+        margin: 0;
     }
 
     .flex {
