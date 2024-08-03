@@ -14,8 +14,8 @@ export default function SectionTitle({ children }) {
                 start: "top bottom-=200px",
             },
             yPercent: 100,
-            ease: "power2.out",
-            duration: 1,
+            ease: "power3.out",
+            duration: 1.2,
         })
     }, { scope: sectionTitle})
 

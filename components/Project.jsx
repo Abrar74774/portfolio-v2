@@ -17,16 +17,16 @@ export default function Project({ title, techs, site, source, img, description }
 			scrollTrigger: {
 				trigger: `.${styles["desc-container"]}`,
 				// toggleActions: "play none none reverse",
-				start: "top bottom-=150px",
+				start: "top bottom-=200px",
 			},
 		})
-
-
+		
+		
 		tl.add("start").from(`.${styles["image-container"]} img`, {
 			yPercent: 105,
 			// opacity: 0,
 			ease: 'power2.out',
-			duration: 1
+			duration: 1,
 		})
 		tl.from(`.${styles.project}:nth-child(even) .${styles["desc-text"]}`, {
 			xPercent: -100,
@@ -46,7 +46,7 @@ export default function Project({ title, techs, site, source, img, description }
 			y: 5,
 			duration: 0.5,
 			stagger: 0.1,
-			delay: 0.3
+			delay: 0.5
 		}, '<')
 	}, { scope: project })
 	return (

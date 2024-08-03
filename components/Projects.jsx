@@ -5,13 +5,13 @@ import SectionTitle from "./SectionTitle.jsx";
 
 export default function Projects() {
     return (
-        <section>
+        <section id="portfolio">
             <div className="container">
                 <SectionTitle>
-                    Projects
+                    Featured Projects
                 </SectionTitle>
             </div>
-            <div id="portfolio">
+            <div>
                 <div className={`${styles["project-container"]}`}>
                     {projects.map(({ title, techs, site, source, img, description }) => 
                     <Project 
