@@ -15,9 +15,9 @@ export default function Project({ title, techs, site, source, img, description }
 	useGSAP(() => {
 		const tl = gsap.timeline({
 			scrollTrigger: {
-				trigger: `.${styles["desc-container"]}`,
+				trigger: `.${styles["desc-text"]}`,
 				// toggleActions: "play none none reverse",
-				start: "top bottom-=200px",
+				start: "top bottom-=50px",
 			},
 		})
 		

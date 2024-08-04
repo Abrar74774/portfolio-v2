@@ -5,6 +5,23 @@
 
 .about-content {
     padding: 0;
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.about-description {
+    width: 65%;
+    padding-right: 2rem;
+}
+
+.about-content p:first-child {
+    margin-top: 0;
+}
+.about-image-container {
+    width: 35%;
+    height: 350px;
+    position: relative;
+    filter: brightness(0.85);
 }
 
 .skills {
@@ -18,7 +35,7 @@
 
 .companies {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(4, 1fr);
     gap: 1rem;
     margin: 0;
     padding: 0;
@@ -62,5 +79,16 @@
         grid-template-columns: repeat(2, 1fr);
     }
     
+    .about-content {
+        flex-direction: column;
+    }
 
+    .about-content > * {
+        width: 100%;
+    }
+
+    .about-description {
+        padding-right: unset;
+        padding-top: 2rem;
+    }
 }

@@ -35,17 +35,36 @@
     cursor: pointer;
 }
 
-.hamburger-container {
-    position: fixed;
+.logo {
+    margin-right: auto;
+
+}
+
+.logo svg, .mobile-logo svg {
+    width: 50px;
+    height: 50px;
+}
+
+.hamburger-container, .mobile-logo {
+    /* position: fixed;
     top: 0;
-    right: 0;
+    right: 0; */
     z-index: 4;
     display: flex;
-    padding: 2rem;
     justify-content: center;
     align-items: center;
     cursor: pointer;
 }
+
+.hamburger-container {
+    padding-top: 5px;
+    padding-right: 2%;
+}
+
+/* .mobile-logo {
+    right: unset;
+    left: 0;
+} */
 
 .hamburger-container svg {
     width: 30px;
@@ -57,9 +76,23 @@
 
 
 @media screen and (max-width: 600px) {
+    .navbar {
+        padding: 1rem;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .logo {
+        margin-right: unset;
+    
+    }
+
     .nav-content {
         font-size: 1.5rem;
         background-color: #111;
+        position: fixed;
+        top: 0;
+        left: 0;
         height: 100vh;
         width: 100vw;
         flex-direction: column;

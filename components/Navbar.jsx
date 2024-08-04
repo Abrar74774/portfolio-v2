@@ -1,5 +1,6 @@
 import styles from '@/styles/Navbar.module.css'
 import Hamburger from '@/public/hamburger-svgrepo-com.svg'
+import Logo from '@/public/logo.svg'
 import { gsap } from "gsap/dist/gsap";
 import { useGSAP } from "@gsap/react";
 
@@ -65,6 +66,9 @@ export default function Navbar() {
         <nav className={styles.navbar}>
             <div className={`${styles["nav-background"]} not-mobile`}></div>
             <div className={`${styles["nav-content"]}`} style={!open ? { visibility: 'hidden' } : {}}>
+                <a href="#" className={`${styles.logo} not-mobile`} onClick={handleLinkClick}>
+                    <Logo />
+                </a>
                 <a href="#about" onClick={handleLinkClick}>
                     About
                 </a>
@@ -74,6 +78,9 @@ export default function Navbar() {
                 <a href="#contact" onClick={handleLinkClick}>
                     Contact
                 </a>
+            </div>
+            <div className={`${styles['mobile-logo']} mobile`} onClick={handleBurgerClick}>
+                <Logo />
             </div>
             <div className={`${styles['hamburger-container']} mobile`} onClick={handleBurgerClick}>
                 <Hamburger />
