@@ -66,7 +66,7 @@ export default function Navbar() {
         <nav className={styles.navbar}>
             <div className={`${styles["nav-background"]} not-mobile`}></div>
             <div className={`${styles["nav-content"]}`} style={!open ? { visibility: 'hidden' } : {}}>
-                <a href="#" className={`${styles.logo} not-mobile`} onClick={handleLinkClick}>
+                <a href="#" aria-label='top of page' className={`${styles.logo} not-mobile`} onClick={handleLinkClick}>
                     <Logo />
                 </a>
                 <a href="#about" onClick={handleLinkClick}>
@@ -79,7 +79,7 @@ export default function Navbar() {
                     Contact
                 </a>
             </div>
-            <a href="#" className={`${styles['mobile-logo']} mobile`}>
+            <a href="#" aria-label='top of page' className={`${styles['mobile-logo']} mobile`}>
                 <Logo />
             </a>
             <div className={`${styles['hamburger-container']} mobile`} onClick={handleBurgerClick}>
