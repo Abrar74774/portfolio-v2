@@ -69,9 +69,9 @@ export default function Project({ title, techs, site, source, img, description }
 					{techs.map(tech => <li key={tech}>{tech}</li>)}
 				</ul>
 				<div className={`${styles["desc-links"]}`}>
-					<a href={site}>Website</a>
+					<a href={site} target='_blank'>Website</a>
 					{source &&
-						<a href={source}>Github</a>
+						<a href={source} target='_blank'>Github</a>
 					}
 				</div>
 			</div>

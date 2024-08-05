@@ -79,9 +79,9 @@ export default function Navbar() {
                     Contact
                 </a>
             </div>
-            <div className={`${styles['mobile-logo']} mobile`} onClick={handleBurgerClick}>
+            <a href="#" className={`${styles['mobile-logo']} mobile`}>
                 <Logo />
-            </div>
+            </a>
             <div className={`${styles['hamburger-container']} mobile`} onClick={handleBurgerClick}>
                 <Hamburger />
             </div>
