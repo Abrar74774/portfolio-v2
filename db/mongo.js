@@ -3,7 +3,6 @@ import { MongoClient } from "mongodb";
 export async function sendSessionDetails(sessionDetails) {
     // let orders = null
     const uri = process.env.MONGO_URI
-    console.log("uri ",uri)
     const client = new MongoClient(uri);
     try {
         await client.connect();

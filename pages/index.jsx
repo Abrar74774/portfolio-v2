@@ -9,7 +9,6 @@ import { useEffect } from "react";
 export default function Home() {
 
   useEffect(() => {
-    console.log("here")
     const lastAccessedDate = window.localStorage.getItem('abrar-portfolio-last-accessed')
     const date = new Date()
     const currentDate = date.toLocaleDateString()

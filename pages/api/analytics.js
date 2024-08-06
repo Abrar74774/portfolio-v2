@@ -12,8 +12,7 @@ export default async function handler(req, res) {
 
             const database = client.db(dbName);
             const collection = database.collection(collectionName);
-            console.log({ [(new Date()).toLocaleDateString()]: "" }, req.body, { upsert: true });
-            
+
             const query = { [(new Date()).toLocaleDateString()]: { $exists: true } };
             const update = { $push: { [(new Date()).toLocaleDateString()]: req.body } };
             const options = { upsert: true };
