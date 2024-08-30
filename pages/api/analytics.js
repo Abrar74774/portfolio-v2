@@ -26,7 +26,7 @@ export default async function handler(req, res) {
             await client.close();
         }
     } else {
-        res.status(405).json({ message: 'sent' });
+        res.status(405).json({ message: 'error' });
     }
 
 }
