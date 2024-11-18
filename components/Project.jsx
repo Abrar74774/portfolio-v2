@@ -52,7 +52,7 @@ export default function Project({ title, techs, site, source, img, description }
 	return (
 		<article ref={project} className={styles.project}>
 			<div className={`${styles["image-container"]}`}>
-				<a href={site}>
+				<a href={site} target='_blank'>
 					<Image priority fill src={img} alt={title} style={{ objectFit: 'cover' }} />
 				</a>
 			</div>

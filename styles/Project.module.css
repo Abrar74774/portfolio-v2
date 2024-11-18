@@ -41,6 +41,11 @@
     height: 100%;
     position: relative;
     overflow: hidden;
+    transition: transform 0.3s;
+}
+
+.image-container:hover {
+    transform: translateY(-5px);
 }
 
 .image-container img {
@@ -85,12 +90,17 @@
     margin: 0.5rem;
 }
 
-.project .desc-container .desc-links a {
+.desc-links a {
     padding: 0.1rem 0.5rem;
     background-color: #29dfff;
     font-weight: 500;
     color: black;
     margin: 0 0.1rem;
+    transition: background 0.3s;
+}
+
+.desc-links a:hover {
+    background-color: #98ebfa;
 }
 
 @media screen and (max-width: 600px) {
