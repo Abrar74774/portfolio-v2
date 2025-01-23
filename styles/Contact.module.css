@@ -1,6 +1,6 @@
 .contact {
-    color: white;
     height: 120vh;
+    font-size: 1.2rem;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -8,42 +8,58 @@
 
 .contact h1 {
     text-align: center;
+    margin: 0 0 2rem;
+}
+
+.email {
+    text-align: center;
+    margin: 1rem;
 }
 
 .email a {
     text-decoration: none;
+    color: white;
 }
 
 .links {
     margin-top: 1.5rem;
     display: flex;
     justify-content: center;
-    position: relative;
     z-index: 2;
     background-color: transparent;
-    height: 80px;
+    height: 50px;
     width: 100%;
-    padding: 0 10px;
 }
 
-.links a {
-    padding: 20px;
+.link-box {
+    background-color: var(--color-primary);
+    min-width: 150px;
+    display: flex;
+    align-items: center;
+    margin: 0.25rem;
+    padding: 0.5rem;
+    transition: background-color var(--transition-sm);
 }
 
-.links a {
-    color: #29dfff;
-    display: block;
-    width: 60px;
-    height: 30px;
-    position: relative;
+.link-box:hover {
+    background-color: var(--color-primary-focused);
+}
+
+.link-box svg {
+    height: 35px;
+    width: 45px;
+    fill: black;
+}
+
+.text {
+    color: black;
+    flex-grow: 1;
+    line-height: 1;
+    text-align: center;
 }
 
 .links a:hover {
     cursor: pointer;
-}
-
-.links a:hover i {
-    color: white;
 }
 
 @media screen and (max-width: 600px) {

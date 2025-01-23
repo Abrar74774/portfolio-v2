@@ -57,10 +57,11 @@ export default function About() {
                     <div className={`${styles["about-description"]}`}>
                         <p>
                             Hi there👋 I&apos;m Abrar — a full stack web developer based in Qatar. I build solutions for
-                            the web - web apps, websites, plugins, widgets and more. I&apos;m passionate about motorsports, video
+                            the web - web apps, websites, plugins, widgets and more - with a focus on software quality, maintainability and clean code. I&apos;m passionate about motorsports, video
                             games, and of course, coding.
                         </p>
                         <p>
+                            I currently work as a Frontend Developer at <a href="https://www.linkedin.com/company/nologystore-w-l-l/">Nologystore</a>.
                             I&apos;ve worked with a wide range of clients from business owners to dev teams in sectors like logistics,
                             research, electronics and others. I work mostly with Javascript along with some Python.
                         </p>
@@ -77,9 +78,12 @@ export default function About() {
                             <li>Typescript</li>
                             <li>Node.js</li>
                             <li>Next.js</li>
+                            <li>Nuxt.js</li>
+                            <li>Sveltekit</li>
                             <li>React</li>
                             <li>Angular</li>
-                            <li>VueJS</li>
+                            <li>Vue</li>
+                            <li>Svelte</li>
                             <li>WordPress</li>
                             <li>jQuery</li>
                             <li>TailwindCSS</li>
@@ -93,7 +97,7 @@ export default function About() {
                 <ul className={styles.companies}>
                     {companies.map(company =>
                         <li key={company.name}>
-                            <a href={company.src}>
+                            <a href={company.src} target='__blank'>
                                 <div className={`${styles["company-logo-container"]}`}>
                                     <Image src={company.image} fill style={{ objectFit: 'contain' }} alt={`${company.name} logo`} />
                                 </div>

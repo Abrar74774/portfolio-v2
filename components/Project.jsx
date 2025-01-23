@@ -5,6 +5,7 @@ import { useGSAP } from "@gsap/react";
 
 import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
 import { useRef } from 'react';
+import CustomEase from 'gsap/CustomEase';
 
 
 gsap.registerPlugin(useGSAP, ScrollTrigger);
@@ -17,7 +18,7 @@ export default function Project({ title, techs, site, source, img, description }
 			scrollTrigger: {
 				trigger: `.${styles["desc-text"]}`,
 				// toggleActions: "play none none reverse",
-				start: "top bottom-=50px",
+				start: "top 90%",
 			},
 		})
 		
@@ -25,8 +26,8 @@ export default function Project({ title, techs, site, source, img, description }
 		tl.add("start").from(`.${styles["image-container"]} img`, {
 			yPercent: 105,
 			// opacity: 0,
-			ease: 'power2.out',
-			duration: 1,
+			ease: CustomEase.create('showw', '.74,-0.01,.31,.99'),
+			duration: 0.8,
 		})
 		tl.from(`.${styles.project}:nth-child(even) .${styles["desc-text"]}`, {
 			xPercent: -100,
@@ -46,7 +47,7 @@ export default function Project({ title, techs, site, source, img, description }
 			y: 5,
 			duration: 0.5,
 			stagger: 0.1,
-			delay: 0.5
+			delay: 0.4
 		}, '<')
 	}, { scope: project })
 	return (

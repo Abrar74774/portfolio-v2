@@ -1,6 +1,7 @@
 import styles from '@/styles/Contact.module.css'
 import SectionTitle from './SectionTitle.jsx'
-import Image from 'next/image.js'
+import GithubLogo from '@/public/github-142-svgrepo-com.svg'
+import LinkedinLogo from '@/public/linkedin-rounded-svgrepo-com.svg'
 import { gsap } from "gsap/dist/gsap";
 import { useGSAP } from "@gsap/react";
 
@@ -28,18 +29,27 @@ export default function Contact() {
                 <SectionTitle>
                     Get In Touch
                 </SectionTitle>
-                <h2 className={styles.email}>
+                <div className={styles.email}>
                     <a href="mailto:abrarshahriarhossain@gmail.com">
                         abrarshahriarhossain@gmail.com
                     </a>
-                </h2>
+                </div>
                 <div className={styles.links}>
                     <a href="https://github.com/Abrar74774" target="_blank">
-                        <Image fill src="github-mark-white.svg" alt="github" style={{objectFit: 'contain'}}/>
+                        <div className={styles["link-box"]}>
+                            <GithubLogo />
+                            <div className={styles.text}>
+                                Github
+                            </div>
+                        </div>
                     </a>
                     <a href="https://www.linkedin.com/in/abrar-hossain-069505196/" target="_blank">
-                        <Image fill src="/In-White-72.png" alt="linkedin" style={{objectFit: 'contain'}}/>
-                        {/* <Image fill src="github-mark-white.svg" alt="github" style={{objectFit: 'contain'}}/> */}
+                    <div className={styles["link-box"]}>
+                        <LinkedinLogo />
+                        <div className={styles.text}>
+                            Linkedin
+                        </div>  
+                    </div>
                     </a>
                 </div>
             </div>

@@ -3,8 +3,11 @@
 }
 
 :root {
+  --color-primary: #29dfff;
+  --color-primary-focused: #98ebfa;
   --filter: blur(6px);
   --filtered-background-color: #223d;
+  --transition-sm: 0.3s;
 }
 
 ::selection {
@@ -48,12 +51,16 @@ html {
 }
 
 a {
+  transition: color var(--transition-sm);
+}
+
+a, a:visited {
   color: #29dfff;
   text-decoration: none;
 }
 
-a:visited {
-  color: #29dfff;
+a:hover {
+  color: var(--color-primary-focused)
 }
 
 h1.section-title {

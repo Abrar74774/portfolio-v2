@@ -92,7 +92,7 @@
 
 .desc-links a {
     padding: 0.1rem 0.5rem;
-    background-color: #29dfff;
+    background-color: var(--color-primary);
     font-weight: 500;
     color: black;
     margin: 0 0.1rem;
@@ -100,7 +100,7 @@
 }
 
 .desc-links a:hover {
-    background-color: #98ebfa;
+    background-color: var(--color-primary-focused);
 }
 
 @media screen and (max-width: 600px) {

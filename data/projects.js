@@ -4,7 +4,7 @@ const projects = [
 		techs: ["Angular"],
 		site: "https://sedgedev.solverminds.net/auth/login",
 		description: `
-			Built and improved major UI elements, along with integrating API with backend for the <a href="https://sedgedev.solverminds.net" target="_blank">SEDGE</a>
+			Built and improved UI elements, integrated with backend API for the <a href="https://sedgedev.solverminds.net" target="_blank">SEDGE</a>
 			platform by <a href="https://www.solverminds.com/" target="_blank">Solverminds</a>.
 		`,
 		img: '/img/ocr_sedge.png'
@@ -18,14 +18,6 @@ const projects = [
 		img: '/img/canvasnote.png'
 	},
 	{
-		title: "Angular Data Visualizer",
-		techs: ["Angular"],
-		site: "https://abrar74774.github.io/AngularDataVisualizer/",
-		source: "https://github.com/Abrar74774/AngularDataVisualizer",
-		description: "Visualize input data as bar chart, line chart or pie chart. Uses Chart.js.",
-		img: "/img/datvis.jpg"
-	},
-	{
 		title: "RayN Lighting",
 		techs: ["Next.js"],
 		site: "https://raynlighting.vercel.app/",
@@ -33,14 +25,13 @@ const projects = [
 		description: "Lighting product website with animations, built with NextJS.",
 		img: '/img/rayn.png'
 	},
-
 	{
-		title: "Restaurant Website",
-		techs: ["CSS", "HTML", "Javascript"],
-		site: "https://abrar74774.github.io/Restaurant",
-		source: "https://github.com/Abrar74774/Restaurant",
-		description: "Simple and responsive restaurant website.",
-		img: '/img/rest.jpg'
+		title: "Angular Data Visualizer",
+		techs: ["Angular"],
+		site: "https://abrar74774.github.io/AngularDataVisualizer/",
+		source: "https://github.com/Abrar74774/AngularDataVisualizer",
+		description: "Visualize input data as bar chart, line chart or pie chart. Uses Chart.js.",
+		img: "/img/datvis.jpg"
 	},
 	{
 		title: "Car Tuner App",
@@ -57,6 +48,14 @@ const projects = [
 		source: "https://github.com/Abrar74774/Dictionary",
 		description: "Simple dictionary app. Uses <a href=\"https://dictionaryapi.dev/\">DictionaryAPI</a> ",
 		img: '/img/dict.jpg'
+	},
+	{
+		title: "Restaurant Website",
+		techs: ["CSS", "HTML", "Javascript"],
+		site: "https://abrar74774.github.io/Restaurant",
+		source: "https://github.com/Abrar74774/Restaurant",
+		description: "Simple and responsive restaurant website.",
+		img: '/img/rest.jpg'
 	},
 	{
 		title: "Construction Website",
