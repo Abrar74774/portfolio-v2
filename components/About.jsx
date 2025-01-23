@@ -62,7 +62,7 @@ export default function About() {
                         </p>
                         <p>
                             I currently work as a Frontend Developer at <a href="https://www.linkedin.com/company/nologystore-w-l-l/">Nologystore</a>.
-                            I&apos;ve worked with a wide range of clients from business owners to dev teams in sectors like logistics,
+                            Previously, I&apos;ve worked with a wide range of clients from business owners to dev teams in sectors like logistics,
                             research, electronics and others. I work mostly with Javascript along with some Python.
                         </p>
                         <p>
@@ -77,6 +77,7 @@ export default function About() {
                             <li>Javascript</li>
                             <li>Typescript</li>
                             <li>Node.js</li>
+                            <li>PHP</li>
                             <li>Next.js</li>
                             <li>Nuxt.js</li>
                             <li>Sveltekit</li>
