@@ -13,30 +13,35 @@
 
 .email {
     text-align: center;
-    margin: 1rem;
+    margin: 1rem 0 0.75rem;
 }
 
 .email a {
     text-decoration: none;
     color: white;
+    display: flex;
+    align-items: center;
 }
 
 .links {
-    margin-top: 1.5rem;
+    margin-top: 0rem;
     display: flex;
     justify-content: center;
     z-index: 2;
     background-color: transparent;
     height: 50px;
-    width: 100%;
+}
+
+.email, .links {
+    max-width: 400px;
 }
 
 .link-box {
     background-color: var(--color-primary);
-    min-width: 150px;
+    width: 100%;
     display: flex;
     align-items: center;
-    margin: 0.25rem;
+    margin: 0 0.25rem;
     padding: 0.5rem;
     transition: background-color var(--transition-sm);
 }
@@ -45,10 +50,14 @@
     background-color: var(--color-primary-focused);
 }
 
-.link-box svg {
+.link-box svg, .email svg {
     height: 35px;
     width: 45px;
     fill: black;
+}
+
+.email svg {
+    fill: white;
 }
 
 .text {

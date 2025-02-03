@@ -2,6 +2,7 @@ import styles from '@/styles/Contact.module.css'
 import SectionTitle from './SectionTitle.jsx'
 import GithubLogo from '@/public/github-142-svgrepo-com.svg'
 import LinkedinLogo from '@/public/linkedin-rounded-svgrepo-com.svg'
+import EmailLogo from '@/public/email-svgrepo-com.svg'
 import { gsap } from "gsap/dist/gsap";
 import { useGSAP } from "@gsap/react";
 
@@ -22,7 +23,7 @@ export default function Contact() {
                 start: "top bottom-=100px",
             }
         })
-    }, { scope: contact})
+    }, { scope: contact })
     return (
         <section id='contact' ref={contact} className={styles.contact}>
             <div>
@@ -31,28 +32,25 @@ export default function Contact() {
                 </SectionTitle>
                 <div className={styles.email}>
                     <a href="mailto:abrarshahriarhossain@gmail.com">
+                        <EmailLogo />
                         abrarshahriarhossain@gmail.com
                     </a>
                 </div>
                 <div className={styles.links}>
-                    <a href="https://github.com/Abrar74774" target="_blank">
-                        <div className={styles["link-box"]}>
-                            <GithubLogo />
-                            <div className={styles.text}>
-                                Github
-                            </div>
+                    <a className={styles["link-box"]} href="https://github.com/Abrar74774" target="_blank">
+                        <GithubLogo />
+                        <div className={styles.text}>
+                            Github
                         </div>
                     </a>
-                    <a href="https://www.linkedin.com/in/abrar-hossain-069505196/" target="_blank">
-                    <div className={styles["link-box"]}>
+                    <a href="https://www.linkedin.com/in/abrar-hossain-069505196/" target="_blank" className={styles["link-box"]}>
                         <LinkedinLogo />
                         <div className={styles.text}>
                             Linkedin
-                        </div>  
-                    </div>
+                        </div>
                     </a>
                 </div>
             </div>
-        </section>  
+        </section>
     )
 }
