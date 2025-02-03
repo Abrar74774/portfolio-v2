@@ -11,7 +11,7 @@ export default function SectionTitle({ children }) {
         gsap.from("div", {
             scrollTrigger: {
                 trigger: "div",
-                start: "top bottom-=200px",
+                start: "top 92%",
             },
             yPercent: 100,
             ease: "power3.out",

@@ -26,20 +26,20 @@ export default function Project({ title, techs, site, source, img, description }
 		tl.add("start").from(`.${styles["image-container"]} img`, {
 			yPercent: 105,
 			// opacity: 0,
-			ease: CustomEase.create('showw', '.74,-0.01,.31,.99'),
-			duration: 0.8,
+			ease: 'power4.out',
+			duration: 1,
 		})
 		tl.from(`.${styles.project}:nth-child(even) .${styles["desc-text"]}`, {
 			xPercent: -100,
-			duration: 0.7,
-			ease: 'power2.out',
-			delay: 0.3
+			duration: 1,
+			ease: 'power4.out',
+			delay: 0.1
 		}, 'start')
 		tl.from(`.${styles.project}:nth-child(odd) .${styles["desc-text"]}`, {
 			xPercent: 100,
-			duration: 0.7,
-			ease: 'power2.out',
-			delay: 0.3
+			duration: 1,
+			ease: 'power4.out',
+			delay: 0.1
 		}, 'start')
 
 		tl.from(`.${styles["desc-container"]} > *:not(.${styles["desc-text-container"]}), .${styles["desc-text"]} p`, {
@@ -47,7 +47,7 @@ export default function Project({ title, techs, site, source, img, description }
 			y: 5,
 			duration: 0.5,
 			stagger: 0.1,
-			delay: 0.4
+			delay: 0.5
 		}, '<')
 	}, { scope: project })
 	return (
