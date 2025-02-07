@@ -5,7 +5,6 @@ import { useGSAP } from "@gsap/react";
 
 import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
 import { useRef } from 'react';
-import CustomEase from 'gsap/CustomEase';
 
 
 gsap.registerPlugin(useGSAP, ScrollTrigger);
