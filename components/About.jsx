@@ -61,7 +61,7 @@ export default function About() {
                             games, and of course, coding.
                         </p>
                         <p>
-                            Recently, I've worked as a Frontend Developer at <a href="https://www.linkedin.com/company/nologystore-w-l-l/">Nologystore</a>.
+                            Recently, I&apos;ve worked as a Frontend Developer at <a href="https://www.linkedin.com/company/nologystore-w-l-l/">Nologystore</a>.
                             Previously, I&apos;ve worked with a wide range of clients from business owners to dev teams in sectors like logistics,
                             research, electronics and others. I work mostly with Javascript along with some Python.
                         </p>
