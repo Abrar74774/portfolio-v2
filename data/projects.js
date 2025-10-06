@@ -1,21 +1,11 @@
 const projects = [
 	{
-		title: "SEDGE - OCR UI",
-		techs: ["Angular"],
-		site: "https://sedgedev.solverminds.net/auth/login",
-		description: `
-			Built and improved UI elements, integrated with backend API for the <a href="https://sedgedev.solverminds.net" target="_blank">SEDGE</a>
-			platform by <a href="https://www.solverminds.com/" target="_blank">Solverminds</a>.
-		`,
-		img: '/img/ocr_sedge.png'
-	},
-	{
-		title: "Canvasnote",
-		techs: ["VueJS", "Typescript"],
-		site: "https://canvasnote-zeta.vercel.app/",
-		source: "https://github.com/Abrar74774/canvasnote",
-		description: "Scribble on canvases and have them saved! User accounts coming soon.",
-		img: '/img/canvasnote.png'
+		title: "Car Tuner App",
+		techs: ["React"],
+		site: "https://abrar74774.github.io/CarTunerApp",
+		source: "https://github.com/Abrar74774/CarTunerApp",
+		description: "Customize your car using sliders. Uses HTML elements for the car design.",
+		img: '/img/Car_Tuner.jpg'
 	},
 	{
 		title: "RayN Lighting",
@@ -32,14 +22,6 @@ const projects = [
 		source: "https://github.com/Abrar74774/AngularDataVisualizer",
 		description: "Visualize input data as bar chart, line chart or pie chart. Uses Chart.js.",
 		img: "/img/datvis.jpg"
-	},
-	{
-		title: "Car Tuner App",
-		techs: ["React"],
-		site: "https://abrar74774.github.io/CarTunerApp",
-		source: "https://github.com/Abrar74774/CarTunerApp",
-		description: "Customize your car using sliders. Uses HTML elements for the car design.",
-		img: '/img/Car_Tuner.jpg'
 	},
 	{
 		title: "Dictionary App",
